@@ -1,0 +1,68 @@
+
+.ITcoder
+{
+	height:270px;
+	width: 263px; 
+}
+
+.slider
+{
+	width: 263px;
+	overflow: hidden;/* cache les autres images*/
+}
+
+/* Pour mettre mes images sur la meme ligne meme si on reduit les dimensions de la page*/
+.slides
+{
+	width: calc(263px * 4);
+	animation: papa 10s infinite;
+}
+
+/* Pour mettre mes images sur la meme ligne*/
+.slide
+{
+	float: left;
+}
+
+/* creer l'animation*/
+@keyframes papa
+{
+	/*à zero pourcent*/
+	0%{
+		transform: translateX(0);
+	}
+
+	10%{
+		transform: translateX(0);
+	}
+
+	/*à zero pourcent*/
+	20%{
+		transform: translateX(-263px);
+	}
+
+	30%{
+		transform: translateX(-263px);
+	}
+
+	/*à zero pourcent*/
+	40%{
+		transform: translateX(-526px);
+	}
+
+	75%{
+		transform: translateX(-526px);
+	}
+	/*à zero pourcent*/
+	90%{
+		transform: translateX(-789px);
+	}
+
+	105%{
+		transform: translateX(-789px);
+	}
+	/*à zero pourcent*/
+	120%{
+		transform: translateX(0);
+	}
+}
